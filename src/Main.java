@@ -3,11 +3,10 @@ package src;
 import java.util.Scanner;
 
 public class Main {
-
     private static Scanner scanner = new Scanner(System.in);
     private static GroceryList groceryList = new GroceryList();
 
-    public static void Main(String[] args) {
+    public static void main(String[] args) {
 
         boolean quit = false;
         int choice = 0;
@@ -77,7 +76,7 @@ public class Main {
         System.out.println("Please enter item number: ");
         int itemNo = scanner.nextInt();
         scanner.nextLine();
-        groceryList.removeGroceryItem(itemNo);
+        groceryList.removeGroceryItem(itemNo-1);
 
     }
 
@@ -97,3 +96,5 @@ public class Main {
 
 
 }
+
+
